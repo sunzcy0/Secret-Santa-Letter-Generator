@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Santa Letter Generator</title>
+</head>
+<body>
+  <header>
+    <h3>Secret Santa Letter Generator</h3>
+    <nav>
+      <ul>
+        <li><a href="index.html">Create a Letter</a></li>
+        <li><a href="about.html">Mailbox</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="create-a-letter" class="create-a-letter">
+      <h2>Create a Letter</h2>
+      <form action="/submit-letter" method="post">
+        <label for="recipient-name">Recipient's Name:</label><br>
+        <input type="text" id="recipient-name" name="recipient-name" required><br><br>
+
+        <label for="recipient-email">Recipient's Email:</label><br>
+        <input type="email" id="recipient-email" name="recipient-email" required><br><br>
+        
+
+        <label for="personal-message">Personal Message:</label><br>
+        <textarea id="personal-message" name="personal-message" rows="4" cols="50"></textarea><br><br>
+
+        <input type="submit" value="Generate Letter">
+      </form>
+    </section>
+    <section id="mailbox" class="mailbox">
+      <h2>Mailbox</h2>
+      <p>Here are your most recent letters!</p>
+      <div class="letter-list">
+        <div class="letter-entry">
+          <h3>To: John Doe</h3>
+          <p>Email:</p>
+          <p>Message: Wishing you a joyful holiday season!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Made by @sunzcy</p>
+  </footer>
+</body>
+</html>
