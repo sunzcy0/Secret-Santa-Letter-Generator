@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Rochester&display=swap');
+
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: Rochester, static;
+  font-size: 20px;
+  background-color: #9D9167;
+  color: #f2ede9;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+header nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li{
+  margin: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #f2ede9;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3E9DC;
+  padding: 20px;
+}
+
+
+main h2 {
+  font-family: Rochester, static;
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #743014;
+}
+
+main p {
+  font-family: Quicksand, static;
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  max-width: 700px;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Rochester, static;
+  font-size: 24px;
+  padding: 50px; 
+  margin-bottom: 20px;
+  color: black;
+}
+
+.welcome img {
+  width: 300px;
+  height: auto;
+  margin: 20px;
+}
+
+.create-letter-button {
+  font-family: Quicksand, static;
+  background-color: #84592B;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+  color: beige;
+  border: none;
+  border-radius: 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.create-a-letter {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.letter-card {
+  display: block;
+  background-color: #E8D1A7;
+  border: 1px solid #84592B;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 500px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #84592B;
+  color: beige;
+  font-family: Rochester, static;
+}
