@@ -5,13 +5,14 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  height: auto;
 }
 
 header {
   font-family: Rochester, static;
   font-size: 20px;
-  background-color: #9D9167;
-  color: #f2ede9;
+  background-color: #d5c99f;
+  color: #84592B;
   padding: 10px 16px;
   display: flex;
   align-items: center;
@@ -33,14 +34,15 @@ header nav li{
 
 header nav a {
   text-decoration: none;
-  color: #f2ede9;
+  color: #84592B;
 }
 
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F3E9DC;
+  background-image: url("./images/background2.jpg");
+  width: 100%;
   padding: 20px;
 }
 
@@ -64,10 +66,14 @@ main p {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-family: Rochester, static;
   font-size: 24px;
+  background-color: #d5c99f;
+  opacity: 0.9;
+  border-radius: 75px;
   padding: 50px; 
-  margin-bottom: 20px;
+  margin: 30px; 
   color: black;
 }
 
@@ -75,6 +81,13 @@ main p {
   width: 300px;
   height: auto;
   margin: 20px;
+}
+
+.create-letter-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .create-letter-button {
@@ -91,11 +104,56 @@ main p {
 }
 
 .create-a-letter {
-  padding: 10px 20px;
+  padding: 40px;
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 20px;
+  margin: 20px;
+  background-color: #d5c99f;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.create-a-letter input, .create-a-letter textarea, .create-a-letter select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+.choose-template {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px;
+  background-color: #d5c99f;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.template-options {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.template-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin: 10px;
+  background-color: #f5f0e6;
+  border-radius: 7px;
+}
+
+.template-button img {
+  width: 150px;
+  height: auto;
+  border: 2px solid transparent;
+  border-radius: 5px;
 }
 
 .letter-card {
@@ -112,7 +170,8 @@ main p {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #84592B;
-  color: beige;
+  background-color: #d5c99f;
+  color: #84592B;
   font-family: Rochester, static;
+  width: 100%;
 }
