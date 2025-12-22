@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Secret Santa Letter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h3>Secret Santa Letter Generator</h3>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./mailbox.html">Mailbox</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="create-letter-main">
+    <section id="create-a-letter" class="create-a-letter">
+      <h2>Create a Letter</h2>
+      <form id="letter-form">
+        <label for="recipient-name">Recipient's Name:</label><br>
+        <input type="text" id="recipient-name" name="recipient-name" required><br><br>
+
+        <label for="recipient-email">Recipient's Email:</label><br>
+        <input type="email" id="recipient-email" name="recipient-email" required><br><br>
+        
+
+        <label for="personal-message">Personal Message:</label><br>
+        <textarea id="personal-message" name="personal-message" rows="4" cols="50"></textarea><br><br>
+
+        <input class="submit-letter-button" type="submit" value="Generate Letter">
+      </form>
+    </section>
+    <section class="choose-template">
+      <h2>Choose a Template</h2>
+      <p>Select a letter template for your Secret Santa letter.</p>
+      <div class="template-options">
+      <button class="template-button template-button-gingerbread" onclick="selectTemplate('gingerbread-theme')">
+        <img src="./images/gingerbread man.png">
+      </button>
+      <button class="template-button template-button-tree" onclick="selectTemplate('tree-theme')">
+        <img src="./images/tree.png">
+      </button>
+      <button class="template-button template-button-snowman" onclick="selectTemplate('snowman-theme')">
+        <img src="./images/snowman.png">
+      </button>
+      </div>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>Made by @sunzcy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
