@@ -7,7 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main>
+  <header>
+    <h3>Secret Santa Letter Generator</h3>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./mailbox.html">Mailbox</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="create-letter-main">
     <section id="create-a-letter" class="create-a-letter">
       <h2>Create a Letter</h2>
       <form id="letter-form">
@@ -24,10 +34,20 @@
         <input type="submit" value="Generate Letter">
       </form>
     </section>
-    <section class"choose-template">
+    <section class="choose-template">
       <h2>Choose a Template</h2>
       <p>Select a letter template for your Secret Santa letter.</p>
-      <button src="./images/santa.png">Select Template</button>
+      <div class="template-options">
+      <button class="template-button template-button-gingerbread" onclick="selectTemplate('gingerbread-theme')">
+        <img src="./images/gingerbread man.png">
+      </button>
+      <button class="template-button template-button-tree" onclick="selectTemplate('tree-theme')">
+        <img src="./images/tree.png">
+      </button>
+      <button class="template-button template-button-snowman" onclick="selectTemplate('snowman-theme')">
+        <img src="./images/snowman.png">
+      </button>
+      </div>
 
     </section>
   </main>
