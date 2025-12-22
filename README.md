@@ -1,2 +1,2 @@
 # Secret-Santa-Letter-Generator
-Webpage to write a friendly letter for your Secret Santa! 🎄
+A fun Secret Santa web app where you can write personalized letter, choose a festive theme, and save it to digital mailbox, all in you bowser! 🎄🎁🎅🏻
