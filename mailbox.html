@@ -7,29 +7,40 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <h3>Secret Santa Letter Generator</h3>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./create-letter.html">Create a Letter</a></li>
+      </ul>
+    </nav>
+  </header>
   <main>
   <section id="mailbox" class="mailbox">
       <h2>Mailbox</h2>
       <p>Here are your most recent letters!</p>
-      <div class="letter-list"></div>
+      <div class="letters-container" id="letters-container"></div>
     </section>
   </main>
 
   <script>
-  const letterListDiv = document.querySelector(".letter-list");
+  const lettersContainer = document.getElementById("letters-container");
   const letters = JSON.parse(localStorage.getItem("letters")) || [];
 
   letters.forEach(letter => {
-    const card = document.createElement("div");
-    card.classList.add("letter-card", letter.theme);
+  const card = document.createElement("div");
+  card.classList.add("letter-card");
 
-    card.innerHTML = `
-      <h3>To: ${letter.name}</h3>
-      <p><strong>Email:</strong> ${letter.email}</p>
-      <p>${letter.message}</p>
-    `;
+  card.classList.add(`theme-${letter.theme}`);
 
-    letterListDiv.appendChild(card);
+  card.innerHTML = `
+    <h2>Dear ${letter.name}</h2>
+    <p>${letter.message}</p>
+    <small>${letter.email}</small>
+  `;
+
+  lettersContainer.appendChild(card);
   });
   </script>
 
