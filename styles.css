@@ -5,7 +5,6 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  height: auto;
 }
 
 header {
@@ -46,7 +45,6 @@ main {
   padding: 20px;
 }
 
-
 main h2 {
   font-family: Rochester, static;
   font-size: 60px;
@@ -83,11 +81,16 @@ main p {
   margin: 20px;
 }
 
+
 .create-letter-main {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  padding: 40px;
+  flex-wrap: wrap; /* para que en celular sí se acomode */
 }
 
 .create-letter-button {
@@ -131,29 +134,46 @@ main p {
   background-color: #d5c99f;
   opacity: 0.9;
   border-radius: 15px;
+  width: 45%;
+  max-width: 600px;
+}
+
+.create-a-letter {
+  width: 45%;
+  max-width: 600px;
 }
 
 .template-options {
   display: flex;
   flex-direction: row;
-  gap: 15px;
-  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .template-button {
-  background: none;
+  width: 150px;
+  height: auto;
+  background-color: #f5f0e6;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
-  margin: 10px;
-  background-color: #f5f0e6;
-  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform .2s ease;
+}
+
+.template-button:hover {
+  transform: scale(1.05);
 }
 
 .template-button img {
-  width: 150px;
-  height: auto;
-  border: 2px solid transparent;
-  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .letter-card {

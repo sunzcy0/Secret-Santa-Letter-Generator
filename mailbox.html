@@ -15,6 +15,24 @@
     </section>
   </main>
 
+  <script>
+  const letterListDiv = document.querySelector(".letter-list");
+  const letters = JSON.parse(localStorage.getItem("letters")) || [];
+
+  letters.forEach(letter => {
+    const card = document.createElement("div");
+    card.classList.add("letter-card", letter.theme);
+
+    card.innerHTML = `
+      <h3>To: ${letter.name}</h3>
+      <p><strong>Email:</strong> ${letter.email}</p>
+      <p>${letter.message}</p>
+    `;
+
+    letterListDiv.appendChild(card);
+  });
+  </script>
+
   <footer>
     <p>Made by @sunzcy</p>
   </footer>
